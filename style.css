@@ -1,0 +1,55 @@
+/*Color to use:
+#F4A972 (for background)
+#FBC28F (for related backgrouund)
+#c2a5a8 (for text on dark background)
+
+
+color1: #BCB8A5ff;
+color2: #CCAE86ff;
+color3: #A5CDD2ff;
+color4: #A2805Bff;
+color5: #8A6540ff;
+
+*/
+
+h1 {
+  font-family: 'Prata', Serif;
+  font-size: 148px;;
+  color: white;
+  margin: 0px;
+}
+h1::first-line{
+  font-size: 200px;
+}
+
+p {
+  font-family: 'Lato', Sans-Serif;
+  font-size: 24px;
+  color:white;
+}
+
+header {
+  height: 500px;
+  background: /* top, transparent black */
+linear-gradient( rgba(0, 0, 0, 0.05), rgba(0, 0, 0, .3)), /* bottom, image */
+url(images/top_banner.jpg);
+background-size: cover;
+text-align: center;
+padding: 40px 0px;
+}
+
+nav a {
+  font-family: 'Lato', Sans-Serif;
+  font-size: 24px;
+  text-decoration: none;
+  padding: 25px 25px 15px 25px;
+}
+nav {
+  background: /* top, transparent black */
+linear-gradient( rgba(0, 0, 0, 0.05), rgba(0, 0, 0, .2));
+padding: 15px 0px;
+}
+a:link { color: #CCAE86; }
+a:visited { color: #BCB8A5; }
+a:hover { color: #A2805B; }
+a:active { color: #8A6540; }
