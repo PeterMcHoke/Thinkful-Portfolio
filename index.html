@@ -4,30 +4,43 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peter McCrae-Hokenson</title>
+    <!-- Normalizing the CSS so the browsers don't pull any tricks on us-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
               rel="stylesheet"
               type="text/css"/>
+    <!--Importing the little images for social icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap" rel="stylesheet">  </head>
   <body>
     <header>
-      <h1>Hello, I'm Peter. <span class="light-text">I'm a web developer.</span></h1>
-      <nav>
+      <!--The navbar that sticks to the top of the page at all times.-->
+      <nav class ="sticky">
         <a href="index.html">Home</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
+      <h1>Hello, I'm Peter. <span class="light-text">I'm a web developer.</span></h1>
     </header>
+    <!--The nifty minimalist divider that separtes the header from the rest of the content-->
     <hr>
     <main>
+      <!--The container for the self portrait that I hope to make fade behind the intro div in coming versions-->
+      <div class="self-portrait">
+      </div>
       <div id ="intro">
-        <h3>
+        <h2>Who?</h2>
+        <p>My name is Peter McCrae-Hokenson. I grew up in a small town in Michigan. I studied Studio Art at St. Olaf College in Northfield, MN. I currently live in Minneapolis, MN.</p>
       </div>
       <div id="about-me">
-
+        <h2>What?</h2>
+        <p>I care deeply about design. I realize that passion through web development, photography, filmmaking. I am motivated by people, places, and the stories that connect them. I hope for my work to illustrate my insatiable curiosity for those stories and the best way to bring them to light.</p>
       </div>
       <div id="contact">
-
+        <h2>Where?</h2>
+        <a href="https://www.linkedin.com/in/peter-mccrae-hokenson/" target="_blank" class="fa fa-linkedin"></a>
+        <a href="https://github.com/PeterMcHoke" target="_blank" class="fa fa-github"></a>
+        <a href="mailto:petermccraehokenson@gmail.com" target="_blank" class="fa fa-envelope"></a>
       </div>
     </main>
   </body>
