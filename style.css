@@ -4,25 +4,34 @@ body {
   background-image: url(images/backgrounds/so-white/so-white.png);
   color: #363636;
   font-family: 'Roboto Condensed', sans-serif;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.175), rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.175)), url(images/backgrounds/so-white/so-white.png);
 }
 
 /*Text Styling*/
-h1, h2, h3, h4 {
+h1, h2, h3 {
   font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 1.8px;
+  letter-spacing: 2.5px;
 }
 
 h1 {
   font-size: 30px;
+  padding: 15px 0px;
 }
 
 h1 > span.light-text {
   font-weight: 300;
 }
 
-p {
+h4 {
+  font-family: 'Rock Salt', cursive;
+  font-size: 15px;
+}
+
+p, li {
   font-size: 16px;
+  letter-spacing: .5px;
+
 }
 
 nav a {
@@ -32,10 +41,17 @@ nav a {
   padding: 35px 25px 15px 25px;
 }
 
+.left-align {
+  text-align: left;
+}
+li {
+  padding: 5px;
+}
 /*Cool Little Divider*/
 hr {
   border: 0;
   height: 1px;
+  width: 75%;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
@@ -46,22 +62,42 @@ padding: 60px 0px 30px 0px;
 }
 
 nav {
-   width: 50%;
+   width: 100%;
    padding: 25px 0px;
-   background-image: url(images/backgrounds/so-white/so-white.png);
+   background: linear-gradient(to right, rgba(0, 0, 0, 0.175), rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.175)), url(images/backgrounds/so-white/so-white.png);
    z-index: 10;
 }
+main {
+  text-align: center;
+}
+footer {
+  text-align: center;
+  padding: 40px 0px 35px 0px;
 
-main > div {
+}
+main > section, main > div{
   width: 30%;
   text-align: center;
   padding: 20px 0px;
   margin: auto;
 }
 
-main > div#contact {
+footer > article  {
+  width: 30%;
+  text-align: center;
+  margin: auto;
+}
+ol > li  {
+  text-align: center;
+}
+
+main > section#contact {
   width: 100%;
   z-index: 10;
+}
+
+.tidbit {
+  padding-top: 100px;
 }
 
 /*This cool little CSS trick makes the navbar stick to the top!*/
@@ -81,19 +117,28 @@ main > div#contact {
 }
 
 /*Pseudo-classes for links*/
-a:link {color: #A2805B;}
-a:visited { color: #A2805B;}
-a:hover { color: #363636; transition: 0.5s; transition-timing-function: ease-in-out;}
+a:link {color: #363636;}
+a:visited { color: #363636;}
+a:hover { color: #009dff; transition: 0.5s; transition-timing-function: ease-in-out;}
 a:active { color: #CCAE86;}
 
+/*Having some fun with the navbar colors to relate to the portrait below*/
+.blue-hover:hover{
+  color: #009dff; transition: 0.5s; transition-timing-function: ease-in-out;
+}
+.orange-hover:hover{
+  color: #ff7700; transition: 0.5s; transition-timing-function: ease-in-out;
+}
+.purple-hover:hover{
+  color: #8600ff; transition: 0.5s; transition-timing-function: ease-in-out;
+}
 /*Styling the top image*/
 main > div.self-portrait {
 height: 200px;
 width: 300px;
 margin-top: 15px;
 background: /* top, transparent black */
-linear-gradient( rgba(255, 255, 255, 0), rgba(255, 255, 255, .15), rgba(255, 255, 255, .5)), /* bottom, image */
+linear-gradient( rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, .4)), /* bottom, image */
 url(./images/self-portrait.png);
 background-size: 300px 300px;
-filter:grayscale(10%);
 }
