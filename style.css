@@ -16,7 +16,7 @@ h1, h2, h3 {
 
 h1 {
   font-size: 30px;
-  padding: 15px 0px;
+  padding: 15px 30px;
 }
 
 h1 > span.light-text {
@@ -76,14 +76,14 @@ footer {
 
 }
 main > section, main > div{
-  width: 30%;
+  width: 70%;
   text-align: center;
   padding: 20px 0px;
   margin: auto;
 }
 
 footer > article  {
-  width: 30%;
+  width: 70%;
   text-align: center;
   margin: auto;
 }
@@ -108,7 +108,7 @@ main > section#contact {
 }
 /*Styling the link images for LinkedIn, Github and Email!*/
 .fa {
-  padding: 25px;
+  padding: 20px 5px;
   font-size: 30px;
   width: 50px;
   text-align: center;
@@ -116,6 +116,10 @@ main > section#contact {
   color: #A2805B;
 }
 
+
+.item {
+  padding: 10px 10px;
+}
 /*Pseudo-classes for links*/
 a:link {color: #363636;}
 a:visited { color: #363636;}
@@ -141,4 +145,46 @@ background: /* top, transparent black */
 linear-gradient( rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, .4)), /* bottom, image */
 url(./images/self-portrait.png);
 background-size: 300px 300px;
+}
+
+/*Media Queries*/
+
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 30%;
+    margin: auto;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item {
+    flex: 1;
+    padding: 25px 10px;
+  }
+
+  .musical {
+    padding: 0px;
+  }
+
+  .fa {
+    padding: 25px;
+  }
+
+  div.projects,
+  div.contacts {
+    flex-direction: row;
+  }
+
+.project-wrapper {
+  width: 80%;
+}
+
+.project-wrapper .item {
+  
+}
+
+
 }
