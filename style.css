@@ -8,7 +8,7 @@ body {
 }
 
 /*Text Styling*/
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 2.5px;
@@ -23,9 +23,10 @@ h1 > span.light-text {
   font-weight: 300;
 }
 
-h4 {
+article#tidbits h4 {
   font-family: 'Rock Salt', cursive;
   font-size: 15px;
+  text-transform: none;
 }
 
 p, li {
@@ -183,7 +184,7 @@ background-size: 300px 300px;
 }
 
 .project-wrapper .item {
-  
+
 }
 
 
