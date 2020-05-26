@@ -48,6 +48,10 @@ nav a {
 li {
   padding: 5px;
 }
+
+ol {
+  list-style: none;
+}
 /*Cool Little Divider*/
 hr {
   border: 0;
@@ -152,7 +156,7 @@ background-size: 300px 300px;
 
 @media all and (min-width: 800px) {
   .wrapper {
-    width: 30%;
+    width: 50%;
     margin: auto;
   }
 
@@ -183,9 +187,20 @@ background-size: 300px 300px;
   width: 80%;
 }
 
-.project-wrapper .item {
+article#tidbits {
+  width:35%;
+}
 
+#about-me ul {
+  list-style: none;
 }
 
 
+}
+
+@media all and (min-width: 1080px) {
+  .main {
+    width: 30%;
+    margin: auto;
+}
 }
