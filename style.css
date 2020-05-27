@@ -5,6 +5,7 @@ body {
   color: #363636;
   font-family: 'Roboto Condensed', sans-serif;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.175), rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.175)), url(images/backgrounds/so-white/so-white.png);
+  -webkit-font-smoothing: antialiased;
 }
 
 /*Text Styling*/
@@ -163,6 +164,8 @@ background-size: 300px 300px;
   .group {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .item {
