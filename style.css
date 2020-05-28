@@ -263,6 +263,7 @@ article#tidbits {
   padding-top: 20px;
   width: 80%;
   margin: auto;
+  text-align: center;
 }
 .group-contact {
   display: flex;
